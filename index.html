@@ -1,132 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Grupo10">
-    <title>Car-Recommendation</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/styles.css">
-    <!--Font awesome: -->
-    <script src="https://kit.fontawesome.com/e547f827f8.js" crossorigin="anonymous"></script>
-    <!--Google Fonts: -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-</head>
-<body>  
-    <header>
-        <nav id="nav-bar">
-            <div class="container"> 
-
-                <a href="index.html"><img src="./images/logo.png" alt="logo" class="logo"></a>
-
-                <ul>
-                    <li><a class="selected" href="index.html"><i class="fa-solid fa-house"></i></a></li>
-                   <!-- <li><a href="juegos.html"><i class="fa-solid fa-gamepad"></i> Juegos</a></li>--> 
-                    <li><a  href="encuesta.html"><i class="fa-solid fa-desktop"></i> Obtener Recomendación</a></li>
-                    <!-- <li><a href="contacto.html"><i class="fa-solid fa-comment-dots"></i> Feedback</a></li>-->
-                </ul>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/inicio.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/logo-transp.png"
+      type="image/x-icon"
+    />
+    <title>LP-Cars</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav
+          class="row navbar text-black justify-content-between align-items-center text-capitalize pt-4 fw-bold fs-4"
+        >
+          <a href="./index.html" class="col-auto text-reset">
+            <img src="./images/logo-transp.png" alt="logo" />
+          </a>
+          <div class="col-auto">
+            <a href="./index.html" class="text-reset px-2 py-1 nav-enlace"
+              >Home</a
+            >
+            <a href="#" class="text-reset px-2 py-1 nav-enlace"
+              >Documentacion</a
+            >
+          </div>
         </nav>
-
+        <div class="row text-white h-100 align-items-center">
+          <div class="col-6 descripcion p-5">
+            <h1 class="text-capitalize">Busca tu Recomendación</h1>
+            <p class="fs-5">
+              Nuestro sistema permite generar una recomendación sobre si te
+              conviene o no comprar un automóvil usado. Para ello solo debes
+              completar una serie de preguntas. Animate y compra de forma segura
+              tu vehículo.
+            </p>
+            <a
+              href="./cuestionario.html"
+              class="text-reset btn btn-success fs-5"
+              >Empezar</a
+            >
+          </div>
+        </div>
+      </div>
     </header>
 
-    <main>
-
-        <div class="carrusel">
-            <div class="imagenes" id="imagenes">
-                <img class="contenedor" src="images/carrossel1.jpg" alt="Carrusel ">
-                <img class="contenedor" src="images/carrossel2.jpg" alt="Carruse2 ">
-                <img class="contenedor" src="images/carrossel3.jpg" alt="Carruse3 ">
-            </div>
-            <div class="btn btn-der" id="derecha"> &#8594; </div>
-            <div class="btn btn-izq" id="izquierda"> &#8592; </div>
-        </div>
-
-        
-        <div class="Presentacion">
-            <section class="s1">
-                <h2> Sistema basado en conocimiento</h2>
-                <br>
-                <p>
-                    Te ayudamos a alegir tu proximo auto usado, de manera muy rapida. Solo debes 
-                    responder un simple cuestionario acerca del auto que queres comprar.
-                </p>
-            </section>
-            <section class="s2">
-                <button class="btn-start">
-                    <a href="encuesta.html "target="_self"><i class="fa-solid fa-play"></i> Empezar</a>
-                </button>
-            </section>
-            <section class="s3">
-                <img src="images/presentacion.jpg" alt="Imagen">
-            </section>
-        </div>
-        <br>
-        <br>
-
-        <div class="como-se-hizo">
-            <section class="caja-exp">
-                <div class="box-flex">
-                <h3>¿ Cómo se hizo ?</h3>
-                <h2><i class="fa-brands fa-uncharted"></i> Construcción del Sistema</h2>
-                <p>
-                    Se siguieron las etapas de desarrollo de un sistema basado en conocimiento: Identificación del problema, Adquisición de conocimientos, Viabilidad, Conceptualización, Formalización e Implementación.
-                </p>
-                </div>
-            </section>
-            <section class="grafico">
-                <img src="images/svg-3.72ca4e88.svg" alt="expl">
-            </section>
-        </div>  
-
-        <section class="marcas">
-            <div class="tarjeta">
-                <div class="thumbnail">
-                    <img src="images/intel.jpg" alt="intel">
-                </div>
-                <div class="tarjeta-content">
-                    <h2>INTEL</h2>
-                </div>    
-            </div>
-            <div class="tarjeta">
-                    <div class="thumbnail">
-                        <img src="images/amd.jpg" alt="amd">
-                    </div>
-                    <div class="tarjeta-content">
-                        <h2>AMD</h2>
-                    </div>    
-                </div>
-            <div class="tarjeta">
-                    <div class="thumbnail">
-                        <img src="images/nvidia.jpg" alt="nvidia">
-                    </div>
-                    <div class="tarjeta-content">
-                        <h2>NVIDIA</h2>
-                    </div>
-                </div>
-            <div class="tarjeta">
-                    <div class="thumbnail">
-                        <img src="images/asus.jpg" alt="asus">
-                    </div>
-                    <div class="tarjeta-content">
-                        <h2>ASUS</h2>
-                    </div>    
-            </div>
-        </section>
-
-    </main>    
-    <footer>
-        <span>
-            
-            <a href="https://github.com/lisandrot/Car-Recommendation" target="_blank"><img src="icons/github_logo_icon_143773.png" alt="github"></a>
-            <h3>Código Fuente</h3>
-        </span>
-    </footer>
-
-    <script src="js/main.js"></script>
-
-</body>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
