@@ -23,26 +23,26 @@ function condicionMotor() {
   //R1
   if (humoBlanco && freno && embrague) {
     condicionDelMotor = "Bueno";
-    message = "El Motor esta en buenas condiciones.";
+    message = "El Motor esta en buenas condiciones. ";
   }
   //R2
   else if (humoNegro && !freno && !embrague) {
     condicionDelMotor = "Malo";
     message =
-      "la condicion del motor es MALO libera Humo Negro, el estado de los Frenos y Embrague es MALO.";
+      "La condicion del motor es mala porque libera Humo Negro y el estado de los frenos y embrague es es malo.";
   }
   //R3
   else if (humoCeleste && freno && !embrague) {
     condicionDelMotor = "Regular";
-    message = "la condicion del Motor es Regular, Falla el embrague.";
+    message = "La condicion del Motor es Regular y el embrague falla. ";
   }
   //R4
   else if (humoBlanco && !freno && embrague) {
     condicionDelMotor = "Regular";
-    message = "la condicion del Motor es Regular, Falla el Freno.";
+    message = "La condicion del Motor es Regular y el freno falla. ";
   } else {
     condicionDelMotor = "Regular";
-    message = "La condición del Motor es Regular.";
+    message = "La condición del Motor es Regular. ";
   }
 
   console.log("Condicion del motor: " + condicionDelMotor);
@@ -56,12 +56,12 @@ function condicionMotor() {
 function eDocumentacion() {
   if (titulo && libreDeuda && form08 && infDominio) {
     estadoDocumentacion = "Completa";
-    message = message + " La documentacion esta completa.";
+    message = message + "La documentacion del vehículo esta completa. ";
   } else {
     estadoDocumentacion = "Incompleta";
     message =
       message +
-      " La documentacion esta Incompleta, es necesario que este completa para comprar el Auto.";
+      " La documentacion del vehículo esta incompleta y es necesario que este completa para comprar el Auto. ";
   }
   console.log("Documentacion: " + estadoDocumentacion);
   return estadoDocumentacion;
@@ -83,7 +83,7 @@ function estadoAuto() {
     estadoDelAuto = "Malo"; // Regla 7
     message =
       message +
-      " El Tapizado, la Pintura, la Carroceria y los Neumaticos se encuentran en malas condiciones.";
+      "Tanto el tapizado, la pintura, la carroceria y los neumaticos se encuentran en malas condiciones. ";
   } else if (
     !tapizado &&
     carroceria &&
@@ -94,7 +94,7 @@ function estadoAuto() {
   ) {
     estadoDelAuto = "Regular"; // Regla 8
     message =
-      message + " Unicamente el Tapiza y la Pintura en malas condiciones.";
+      message + "Unicamente el tapizado y la pintura en malas condiciones. ";
   } else if (
     tapizado &&
     carroceria &&
@@ -104,18 +104,21 @@ function estadoAuto() {
     condicionDelMotor === "Bueno"
   ) {
     estadoDelAuto = "Bueno"; // Regla 9
-    message = message + " Estética en buenas condiciones.";
+    message =
+      message + "La estética del vehículo se encuentra en buenas condiciones. ";
   } else if (
     estadoDocumentacion === "Incompleta" ||
     condicionDelMotor === "Malo"
   ) {
     estadoDelAuto = "Malo"; // agregado
-    message =
-      message +
-      " Estado del auto es malo debido a que falta documentación o el motor no esta en condiciones.";
+    // message =
+    //   message +
+    //   " Estado del auto es malo debido a que falta documentación o el motor no esta en condiciones.";
   } else {
     estadoDelAuto = "Regular"; // valores por defecto
-    message = message + " Estética en condiciones regulares.";
+    message =
+      message +
+      "La estética del vehículo se encuentra en condiciones regulares.";
   }
   console.log("Estado auto: " + estadoDelAuto);
   return estadoDelAuto;
@@ -126,41 +129,39 @@ function estadoAuto() {
  * @return {string}
  ***/
 function Recomendacion() {
+  const siComprar = "<h6>¡ADELANTE, TE RECOMENDAMOS COMPRAR EL AUTO!</h6>";
+  const noComprar =
+    "<h6>LO SENTIMOS, NO ES RECOMENDABLE QUE COMPRES EL AUTO</h6>";
+  const buscaAuto =
+    "<p>Buscá otro auto y regresa para que te ayudemos nuevamente.</p>";
+
   if (estadoDelAuto === "Malo") {
-    recomendacion =
-      "NO ES RECOMENDABLE porque, " +
-      message +
-      " La condición general del Auto es muy mala. Buscá otro Auto y regresa para ayudarte nuevamente!"; // Regla 10
+    recomendacion = noComprar + message + buscaAuto; // Regla 10
   } else if (presupBajo && estadoDelAuto === "Regular") {
     recomendacion =
-      "NO ES RECOMENDABLE porque, " +
+      noComprar +
       message +
-      " Tu presupuesto es muy bajo para la el estado del Auto"; // Regla 11
+      " Tu presupuesto es muy bajo para la el estado del Auto" +
+      buscaAuto; // Regla 11
   } else if (presupMedio && estadoDelAuto === "Regular") {
     recomendacion =
-      "¡FELICIDADES! VE A COMPRAR TU AUTO porque, " +
+      siComprar +
       message +
       " El estado general del auto es Regular, pero acorde a tu presupuesto."; // Regla 12
   } else if (presupAlto && estadoDelAuto === "Regular") {
     recomendacion =
-      "¡FELICIDADES! VE A COMPRAR TU AUTO porque, " +
+      siComprar +
       message +
       " El estado general del auto es Regular, pero acorde a tu presupuesto."; // Regla 13
   } else if (presupAlto && estadoDelAuto === "Bueno") {
     recomendacion =
-      "¡FELICIDADES! VE A COMPRAR TU AUTO porque, " +
-      message +
-      " El estado general del auto es Bueno."; // Regla 14
+      siComprar + message + " El estado general del auto es Bueno."; // Regla 14
   } else if (estadoDelAuto === "Bueno" && presupBajo) {
     recomendacion =
-      "¡FELICIDADES! VE A COMPRAR TU AUTO porque, " +
-      message +
-      " El estado general del auto es Bueno."; // Extra
+      siComprar + message + " El estado general del auto es Bueno."; // Extra
   } else if (estadoDelAuto === "Bueno" && presupMedio) {
     recomendacion =
-      "¡FELICIDADES! VE A COMPRAR TU AUTO porque, " +
-      message +
-      " El estado general del auto es Bueno."; // Extra
+      siComprar + message + " El estado general del auto es Bueno."; // Extra
   }
 
   console.log("Recomendacion: " + recomendacion);

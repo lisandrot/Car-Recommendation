@@ -2,7 +2,7 @@ a {
   text-decoration: none;
 }
 
-.header {
+body {
   background-image: url(../images/auto11.jpg);
   background-position: center;
   background-size: cover;
