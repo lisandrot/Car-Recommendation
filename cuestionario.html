@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/cuestionario.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/logo-transp.png"
+      type="image/x-icon"
+    />
+    <title>LP-Cars</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav
+          class="row navbar text-black justify-content-between align-items-center text-capitalize pt-4 fw-bold fs-4"
+        >
+          <a href="./inicio.html" class="col-auto text-reset">
+            <img src="./images/logo-transp.png" alt="logo" />
+          </a>
+          <div class="col-auto">
+            <a href="./inicio.html" class="text-reset px-2 py-1 nav-enlace"
+              >Home</a
+            >
+            <a href="#" class="text-reset px-2 py-1 nav-enlace"
+              >Documentacion</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <form class="row justify-content-center align-items-center my-5">
+          <h1 class="text-center fs-1 fw-bolder mb-5">
+            Seleccione la opción adecuada
+          </h1>
+          <div class="col-6 form-contenido">
+            <!-- TABLA 1 -->
+            <!-- GASES -->
+            <div class="form-control-e">
+              <h3>¿De qué color son los gases emitidos por el automóvil?</h3>
+              <input
+                type="radio"
+                id="humo-blanco"
+                name="gases"
+                value="humo-blanco"
+                checked="checked"
+              />
+              <label for="humo-blanco">Blanco</label><br />
+              <input
+                type="radio"
+                id="humo-celeste"
+                name="gases"
+                value="humo-celeste"
+              />
+              <label for="humo-celeste">Celeste</label><br />
+              <input
+                type="radio"
+                id="humo-negro"
+                name="gases"
+                value="humo-negro"
+              />
+              <label for="humo-negro">Negro</label><br />
+            </div>
+            <!-- FRENOS -->
+            <div class="form-control-e">
+              <h3>¿Cuál es el estado de los frenos?</h3>
+              <input
+                type="radio"
+                id="freno-bueno"
+                name="frenos"
+                value="freno-bueno"
+                checked="checked"
+              />
+              <label for="freno-bueno">Bueno</label><br />
+              <input
+                type="radio"
+                id="freno-malo"
+                name="frenos"
+                value="freno-malo"
+              />
+              <label for="freno-malo">Malo</label><br />
+            </div>
+
+            <!-- EMBRAGUE -->
+            <div class="form-control-e">
+              <h3>¿Cuál es el estado del embrague?</h3>
+              <input
+                type="radio"
+                id="embrague-bueno"
+                name="embrague"
+                value="embrague-bueno"
+                checked="checked"
+              />
+              <label for="embrague-bueno">Bueno</label><br />
+              <input
+                type="radio"
+                id="embrague-malo"
+                name="embrague"
+                value="embrague-malo"
+              />
+              <label for="embrague-malo">Malo</label><br />
+            </div>
+
+            <!-- TABLA 2 -->
+            <!-- TITULO -->
+            <div class="form-control-e">
+              <h3>
+                ¿El propietario del vehículo a comprar posee el título del
+                automóvil?
+              </h3>
+              <input
+                type="radio"
+                id="si-titulo"
+                name="titulo"
+                value="si-titulo"
+                checked="checked"
+              />
+              <label for="si-titulo">Si tiene</label><br />
+              <input
+                type="radio"
+                id="no-titulo"
+                name="titulo"
+                value="no-titulo"
+              />
+              <label for="no-titulo">No tiene</label><br />
+            </div>
+
+            <!-- LIBRE DEUDA -->
+            <div class="form-control-e">
+              <h3>
+                ¿El propietario del vehículo a comprar posee el libre deuda del
+                automóvil?
+              </h3>
+              <input
+                type="radio"
+                id="si-libre-deuda"
+                name="libre-deuda"
+                value="si-libre-deuda"
+                checked="checked"
+              />
+              <label for="si-libre-deuda">Si tiene</label><br />
+              <input
+                type="radio"
+                id="no-libre-deuda"
+                name="libre-deuda"
+                value="no-libre-deuda"
+              />
+              <label for="no-libre-deuda">No tiene</label><br />
+            </div>
+
+            <!-- FORMULARIO 08 -->
+            <div class="form-control-e">
+              <h3>
+                ¿El propietario del vehículo a comprar posee el formulario 08
+                del automóvil?
+              </h3>
+              <input
+                type="radio"
+                id="si-formulario08"
+                name="formulario08"
+                value="si-formulario08"
+                checked="checked"
+              />
+              <label for="si-formulario08">Si tiene</label><br />
+              <input
+                type="radio"
+                id="no-formulario08"
+                name="formulario08"
+                value="no-formulario08"
+              />
+              <label for="no-formulario08">No tiene</label><br />
+            </div>
+
+            <!-- INFORME DE DOMINIO -->
+            <div class="form-control-e">
+              <h3>
+                ¿El propietario del vehículo a comprar posee el informe de
+                dominio del automóvil?
+              </h3>
+              <input
+                type="radio"
+                id="si-informe-dominio"
+                name="informe-dominio"
+                value="si-informe-dominio"
+                checked="checked"
+              />
+              <label for="si-informe-dominio">Si tiene</label><br />
+              <input
+                type="radio"
+                id="no-informe-dominio"
+                name="informe-dominio"
+                value="no-informe-dominio"
+              />
+              <label for="no-informe-dominio">No tiene</label><br />
+            </div>
+            <!-- TABLA 3 -->
+            <!-- TAPIZADO -->
+            <div class="form-control-e">
+              <h3>¿Cuál es el estado del tapizado del vehículo?</h3>
+              <input
+                type="radio"
+                id="tapizado-bueno"
+                name="tapizado"
+                value="tapizado-bueno"
+                checked="checked"
+              />
+              <label for="tapizado-bueno">Bueno</label><br />
+              <input
+                type="radio"
+                id="tapizado-malo"
+                name="tapizado"
+                value="tapizado-malo"
+              />
+              <label for="tapizado-malo">Malo</label><br />
+            </div>
+
+            <!-- CARROCERÍA -->
+            <div class="form-control-e">
+              <h3>¿Cuál es el estado de la carrocería del vehículo?</h3>
+              <input
+                type="radio"
+                id="carroceria-buena"
+                name="carroceria"
+                value="carroceria-buena"
+                checked="checked"
+              />
+              <label for="carroceria-buena">En buenas condiciones</label><br />
+              <input
+                type="radio"
+                id="carroceria-mala"
+                name="carroceria"
+                value="carroceria-mala"
+              />
+              <label for="carroceria-mala">En malas condiciones</label><br />
+            </div>
+
+            <!-- PINTURA -->
+            <div class="form-control-e">
+              <h3>¿Cuál es el estado de la pintura del vehículo?</h3>
+              <input
+                type="radio"
+                id="pintura-buena"
+                name="pintura"
+                value="pintura-buena"
+                checked="checked"
+              />
+              <label for="pintura-buena">En buenas condiciones</label><br />
+              <input
+                type="radio"
+                id="pintura-mala"
+                name="pintura"
+                value="pintura-mala"
+              />
+              <label for="pintura-mala">En malas condiciones</label><br />
+            </div>
+
+            <!-- NEUMATICOS -->
+            <div class="form-control-e">
+              <h3>¿Cuál es el estado de los neumáticos del vehículo?</h3>
+              <input
+                type="radio"
+                id="neumaticos-buenos"
+                name="neumaticos"
+                value="neumaticos-buenos"
+                checked="checked"
+              />
+              <label for="neumaticos-buenos">En buenas condiciones</label><br />
+              <input
+                type="radio"
+                id="neumaticos-malos"
+                name="neumaticos"
+                value="neumaticos-malos"
+              />
+              <label for="neumaticos-malos">En malas condiciones</label><br />
+            </div>
+            <div class="boton">
+              <button id="botoncito2" class="btn btn-success fs-5 mt-4">
+                Obtener Recomendación
+              </button>
+            </div>
+            <!-- -------------------- -->
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
