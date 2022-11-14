@@ -105,6 +105,14 @@ function estadoAuto() {
   ) {
     estadoDelAuto = "Bueno"; // Regla 9
     message = message + " Estética en buenas condiciones.";
+  } else if (
+    estadoDocumentacion === "Incompleta" ||
+    condicionDelMotor === "Malo"
+  ) {
+    estadoDelAuto = "Malo"; // agregado
+    message =
+      message +
+      " Estado del auto es malo debido a que falta documentación o el motor no esta en condiciones.";
   } else {
     estadoDelAuto = "Regular"; // valores por defecto
     message = message + " Estética en condiciones regulares.";
@@ -143,7 +151,18 @@ function Recomendacion() {
       "¡FELICIDADES! VE A COMPRAR TU AUTO porque, " +
       message +
       " El estado general del auto es Bueno."; // Regla 14
+  } else if (estadoDelAuto === "Bueno" && presupBajo) {
+    recomendacion =
+      "¡FELICIDADES! VE A COMPRAR TU AUTO porque, " +
+      message +
+      " El estado general del auto es Bueno."; // Extra
+  } else if (estadoDelAuto === "Bueno" && presupMedio) {
+    recomendacion =
+      "¡FELICIDADES! VE A COMPRAR TU AUTO porque, " +
+      message +
+      " El estado general del auto es Bueno."; // Extra
   }
+
   console.log("Recomendacion: " + recomendacion);
   return recomendacion;
 }
