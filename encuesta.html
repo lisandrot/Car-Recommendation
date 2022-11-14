@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="José Gonzalez">
+    <title>@PC-Expert</title>
+    <link rel="shortcut icon" href="/images/icon_logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Font awesome: -->
+    <script src="https://kit.fontawesome.com/e547f827f8.js" crossorigin="anonymous"></script>
+    <!--Google Fonts: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="nav-bar">
+            <div class="container"> 
+
+                <a href="index.html"><img src="./images/logo.png" alt="logo" class="logo"></a>
+
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="juegos.html"><i class="fa-solid fa-gamepad"></i> Juegos</a></li>
+                    <li><a class="selected" href="encuesta.html"><i class="fa-solid fa-desktop"></i> Servicio</a></li>
+                    <li><a href="contacto.html"><i class="fa-solid fa-comment-dots"></i> Feedback</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="caja-form-enc">
+            <div class="form">
+                <h2 class="form-title">Por favor responda a estas preguntas...</h2>
+                
+                <form action="" id="form-contact-e" class="form-contact">
+                    <div class="form-control-e">
+                        <p><i class="fa-solid fa-coins"></i> Seleccione su presupuesto disponible para la PC gamer:</p>
+                        <input type="radio" id="bajo" name="presupuesto" value="bajo"  checked="checked">
+                        <label for="bajo">Bajo</label><br>
+                        <input type="radio" id="medio" name="presupuesto" value="medio">
+                        <label for="medio">Medio</label><br>
+                        <input type="radio" id="alto" name="presupuesto" value="alto">
+                        <label for="alto">Alto</label><br>
+                    </div>
+                    <div class="form-control-e">
+                        <p><i class="fa-solid fa-stopwatch"></i> ¿Cuantas horas juegas en la semana?</p>
+                        <input type="radio" id="hj_0_1" name="horas_jugadas" value="hj_0_1" checked="checked">
+                        <label for="hj_0_1">Menos de 1 hora</label><br>
+                        <input type="radio" id="hj_1_5" name="horas_jugadas" value="hj_1_5">
+                        <label for="hj_1_5">De 1 a 5 horas</label><br>
+                        <input type="radio" id="hj_5_15" name="horas_jugadas" value="hj_5_15">
+                        <label for="hj_5_15">De 5 a 15 horas</label><br>
+                        <input type="radio" id="hj_15" name="horas_jugadas" value="hj_15">
+                        <label for="hj_15">Más de 15 horas</label><br>
+                    </div>
+                    <div class="form-control-e">
+                        <p><i class="fa-solid fa-circle-question"></i> ¿Qué es lo más importante en un juego para ti?</p>
+                        <input type="radio" id="historia" name="mas_importante" value="historia" checked="checked">
+                        <label for="historia">La historia</label><br>
+                        <input type="radio" id="graficos" name="mas_importante" value="graficos">
+                        <label for="graficos">Los gráficos</label><br>
+                        <input type="radio" id="jugabilidad" name="mas_importante" value="jugabilidad">
+                        <label for="jugabilidad">La jugabilidad</label><br>
+                        <input type="radio" id="dificultad" name="mas_importante" value="dificultad">
+                        <label for="dificultad">La dificultad</label><br>
+                    </div>
+                    <div class="form-control-e">
+                        <p><i class="fa-solid fa-circle-question"></i> ¿Qué te interesa menos en un videojuego?</p>
+                        <input type="radio" id="visitar" name="interes" value="visitar" checked="checked">
+                        <label for="visitar">Ir a una zona aún no visitada en el mapa</label><br>
+                        <input type="radio" id="interactuar" name="interes" value="interactuar">
+                        <label for="interactuar">Interactuar con otros personajes o jugadorres</label><br>
+                        <input type="radio" id="pelear" name="interes" value="pelear">
+                        <label for="pelear">Pelear</label><br>
+                        <input type="radio" id="nivel" name="interes" value="nivel">
+                        <label for="nivel">Subir de nivel</label><br>
+                    </div>
+                    <div class="form-control-e">
+                        <p><i class="fa-solid fa-circle-question"></i> Cuando juegas un juego con misiones secundarias/opcionales...</p>
+                        <input type="radio" id="ms_nunca" name="misiones_secundarias" value="ms_nunca" checked="checked">
+                        <label for="ms_nunca">No las hago nunca</label><br>
+                        <input type="radio" id="ms_camino" name="misiones_secundarias" value="ms_camino">
+                        <label for="ms_camino">Solo cuando estan en mi camino</label><br>
+                        <input type="radio" id="ms_gustan" name="misiones_secundarias" value="ms_gustan">
+                        <label for="ms_gustan">Hago las que me gustan</label><br>
+                        <input type="radio" id="ms_todas" name="misiones_secundarias" value="ms_todas">
+                        <label for="ms_todas">Las hago todas</label><br>
+                    </div>
+                    <div class="form-control-e">
+                        <p><i class="fa-solid fa-gamepad"></i> ¿Qué tipo de juego prefieres?</p>
+                        <input type="radio" id="tj_shooters" name="tipo_juegos" value="tj_shooters" checked="checked">
+                        <label for="tj_shooters">Shooters o juegos de disparos</label><br>
+                        <input type="radio" id="tj_multijugador" name="tipo_juegos" value="tj_multijugador">
+                        <label for="tj_multijugador">Juegos multijugador o MMO</label><br>
+                        <input type="radio" id="tj_aventuras" name="tipo_juegos" value="tj_aventuras">
+                        <label for="tj_aventuras">Juegos de aventuras</label><br>
+                        <input type="radio" id="tj_logica" name="tipo_juegos" value="tj_logica">
+                        <label for="tj_logica">Juegos de lógica</label><br>
+                    </div>
+                    <div class="form-control-e">
+                        <p><i class="fa-solid fa-clipboard-list"></i> ¿Cuantos juegos has completado en el último año?</p>
+                        <input type="radio" id="jc_ninguno" name="juegos_completados" value="jc_ninguno" checked="checked">
+                        <label for="jc_ninguno">Ninguno</label><br>
+                        <input type="radio" id="jc_1_2" name="juegos_completados" value="jc_1_2">
+                        <label for="jc_1_2">1 o 2</label><br>
+                        <input type="radio" id="jc_3_5" name="juegos_completados" value="jc_3_5">
+                        <label for="jc_3_5">entre 3 y 5</label><br>
+                        <input type="radio" id="jc_6" name="juegos_completados" value="jc_6">
+                        <label for="jc_6">Más de 6 seguro!</label><br>
+                    </div>
+                    <div class="form-control-e">
+                        <p><i class="fa-solid fa-chess-king"></i> ¿Juegas algún tipo de juego competitivo?</p>
+                        <input type="radio" id="tc_si" name="tipo_competitivos" value="tc_si" checked="checked">
+                        <label for="tc_si">Si</label><br>
+                        <input type="radio" id="tc_no" name="tipo_competitivos" value="tc_no">
+                        <label for="tc_no">No</label><br>
+                    </div>
+                    <div class="form-control-e">
+                        <p><i class="fa-solid fa-boxes-stacked"></i> ¿Que vería alguien si observará el inventario de tu personaje en un videojuego?</p>
+                        <input type="radio" id="ip_necesitas" name="inventario_personaje" value="ip_necesitas" checked="checked">
+                        <label for="ip_necesitas">Solo lo que necesitas</label><br>
+                        <input type="radio" id="ip_intercambio" name="inventario_personaje" value="ip_intercambio">
+                        <label for="ip_intercambio">Solo lo que necesitas más otros items para intercambiar</label><br>
+                        <input type="radio" id="ip_raros" name="inventario_personaje" value="ip_raros">
+                        <label for="ip_raros">Objetos raros que te costaron mucho conseguir</label><br>
+                        <input type="radio" id="ip_todos" name="inventario_personaje" value="ip_todos">
+                        <label for="ip_todos">Lleno de cosas con todos los objetos disponibles</label><br>
+                    </div>
+                    <div class="form-control-e">
+                        <p><i class="fa-solid fa-comment-dots"></i> Lo fundamental para mi y la razón por la que me gusta jugar es...</p>
+                        <input type="radio" id="rf_divertirme" name="razon_fundamental" value="rf_divertirme" checked="checked">
+                        <label for="rf_divertirme">Para divertirme</label><br>
+                        <input type="radio" id="rf_amigos" name="razon_fundamental" value="rf_amigos">
+                        <label for="rf_amigos">Para jugar un rato con mis amigos</label><br>
+                        <input type="radio" id="rf_no_aburrirme" name="razon_fundamental" value="rf_no_aburrirme">
+                        <label for="rf_no_aburrirme">Para no aburrirme en casa</label><br>
+                        <input type="radio" id="rf_competir" name="razon_fundamental" value="rf_competir">
+                        <label for="rf_competir">Para competir y ser el mejor</label>
+                    </div>
+        
+                    
+                </form>
+                <button id="botoncito2" type="" name="">Obtener Recomendación</button>
+            </div>
+               
+            <div class="caja-mapa">
+                <h2 class="form-title" style="color: orangered;"><i class="fa-solid fa-square-poll-horizontal"></i> El resultado se mostrará aquí</h2>
+                <div class="form-control-e">
+                    <h3 class="p_titulo"> <i class="fa-solid fa-desktop"></i> Su PC Gamer ideal es la siguiente: </h3>
+                    
+                    <div class="reultados-box">
+
+                        <div class="list_image_pc">
+                            <img id="Pc_gabinete">
+                            <img id="Pc_mother">
+                            <img id="Pc_micro">
+                            <img id="Pc_ram">
+                            <img id="Pc_disco">
+                            <img id="Pc_gpu" >
+                            <img id="Pc_fuente">
+                        </div> 
+
+                            <!-- <img id="Pc_gabinete" alt="Pc-gabinete" src="./pcs/PC3/pc_GAB.png">
+                            <img id="Pc_mother" alt="Pc-mother" src="./pcs/PC3/pc_MOT.png">
+                            <img id="Pc_micro" alt="Pc-micro" src="./pcs/PC3/pc_CPU.png">
+                            <img id="Pc_ram" alt="Pc-ram" src="./pcs/PC3/pc_RAM.png">
+                            <img id="Pc_disco" alt="Pc-disco" src="./pcs/PC3/pc_DIS.png">
+                            <img id="Pc_gpu" alt="Pc-gpu" src="./pcs/PC3/pc_GPU.png">
+                            <img id="Pc_fuente" alt="Pc-fuente" src="./pcs/PC3/pc_FON.png"> -->
+
+                        <div class="list_pc">
+                            <br><br>
+                            <h3 class="p_titulo">- Gabinete: </h3>
+                            <h3 class="p_descrip" id="gabinete"> <!--Corsair Obsidian Series 750D Airflow Edition--></h3> 
+                            
+                            <br><br><br><br><br><br><br>
+                            <h3 class="p_titulo">- Placa madre: </h3> 
+                            <h3 class="p_descrip" id="motherboard"><!--Asus Prime B550M-A--> </h3> 
+
+                            <br><br><br><br><br><br><br>
+                            <h3 class="p_titulo">- Microprocesador:  </h3> 
+                            <h3 class="p_descrip" id="cpu"><!--AMD Ryzen 5 3600--> </h3> 
+
+                            <br><br><br><br><br>
+                            <h3 class="p_titulo" >- Memoria RAM:  </h3>
+                            <h3 class="p_descrip" id="ram"> <!--16GB Kingston HyperX FuryBlack DDR4/3200MHz--></h3> 
+                            
+                            <br><br>
+                            <h3 class="p_titulo" id="p_titulo_disc">- Disco duro: </h3>
+                            <h3 class="p_descrip" id="disco"><!--Samsung 980 500 GB M.2--> </h3> 
+                            
+                            <br><br><br>
+                            <h3 class="p_titulo">- Placa de video (GPU): </h3>
+                            <h3 class="p_descrip" id="gpu"><!--Gigabyte GeForce RTX 3060 OC 8GB GDDR6--> </h3> 
+                            
+                            
+                            <br><br><br><br><br>
+                            <h3 class="p_titulo">- Fuente de alimentación: </h3>
+                            <h3 class="p_descrip" id="fuente"><!--Corsair CX Series CX650M--> </h3> 
+                        </div>     
+                        
+                        
+
+                    </div>
+                </div>           
+            </div>
+                
+        </div>    
+    </main>
+  
+
+    <footer>
+        <span>
+            <!-- <h3 class="codo">Copyright © Codo a Codo 2021</h3> -->
+            <a href="https://github.com/jngonzalez/PC-Expert" target="_blank"><img src="icons/github_logo_icon_143773.png" alt="github"></a>
+            <h3>Código Fuente</h3>
+        </span>
+    </footer>
+
+    <script src="js/encuesta.js"></script>
+
+</body>
+</html>
