@@ -1,0 +1,40 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url(../images/auto1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.nav-enlace {
+  border-radius: 7px;
+}
+
+.nav-enlace:hover {
+  background-color: rgb(247, 179, 91);
+}
+
+.form-contenido {
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.432);
+  border-radius: 12px;
+  color: white;
+}
+
+.form-control-e {
+  margin: 30px 0px;
+  padding: 0px 20px;
+}
+
+.form-control-e h3 {
+  font-size: 23px;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
