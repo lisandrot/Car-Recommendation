@@ -285,14 +285,89 @@
               />
               <label for="neumaticos-malos">En malas condiciones</label><br />
             </div>
-            <div class="boton">
+
+            <!-- TABLA 4 -->
+            <!-- PRESUPUESTO -->
+            <div class="form-control-e">
+              <h3>
+                Indique el presupuesto disponible para la compra del vehículo
+              </h3>
+              <input
+                type="radio"
+                id="bajo"
+                name="presupuesto"
+                value="bajo"
+                checked="checked"
+              />
+              <label for="bajo">Bajo (entre 2000 y 4000 dólares)</label><br />
+              <input type="radio" id="medio" name="presupuesto" value="medio" />
+              <label for="medio">Medio (entre 4000 y 10000 dólares)</label
+              ><br />
+              <input type="radio" id="alto" name="presupuesto" value="alto" />
+              <label for="alto">Alto (más de 10000 dólares)</label><br />
+            </div>
+            <!-- <div class="boton">
               <button id="botoncito2" class="btn btn-success fs-5 mt-4">
+                Obtener Recomendación
+              </button>
+            </div> -->
+
+            <!-- Button trigger modal -->
+            <div class="boton">
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                id="botoncito2"
+              >
                 Obtener Recomendación
               </button>
             </div>
             <!-- -------------------- -->
           </div>
         </form>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">
+                  Modal title
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p id="mireco"></p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Understood
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <!-- JavaScript Bundle with Popper -->
@@ -301,5 +376,6 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script src="js/encuesta2.0.js"></script>
   </body>
 </html>
