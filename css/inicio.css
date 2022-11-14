@@ -1,0 +1,30 @@
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-image: url(../images/auto11.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.container {
+  height: 90vh;
+}
+
+.navbar {
+  backdrop-filter: blur(3px);
+}
+
+.nav-enlace {
+  border-radius: 7px;
+}
+
+.nav-enlace:hover {
+  background-color: rgb(247, 179, 91);
+}
+
+.descripcion {
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
