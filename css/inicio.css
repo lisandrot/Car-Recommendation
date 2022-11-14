@@ -25,6 +25,8 @@ a {
 }
 
 .descripcion {
-  backdrop-filter: blur(5px);
-  border-radius: 5px;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.205);
+  border-radius: 12px;
+  color: white;
 }
