@@ -66,7 +66,8 @@
           <h2 class="form-title">Por favor responda a estas preguntas...</h2>
 
           <form action="" id="form-contact-e" class="form-contact">
-            <!-- Presupuesto -->
+            <!-- TABLA 4 -->
+            <!-- PRESUPUESTO -->
             <div class="form-control-e">
               <p>
                 <i class="fa-solid fa-coins"></i> Seleccione su presupuesto
@@ -257,83 +258,96 @@
             </div>
 
             <!-- TABLA 3 -->
+            <!-- TAPIZADO -->
             <div class="form-control-e">
               <p>
-                <i class="fa-solid fa-boxes-stacked"></i> ¿Que vería alguien si
-                observará el inventario de tu personaje en un videojuego?
+                <i class="fa-solid fa-boxes-stacked"></i> ¿Cuál es el estado del
+                tapizado del vehículo?
               </p>
               <input
                 type="radio"
-                id="ip_necesitas"
-                name="inventario_personaje"
-                value="ip_necesitas"
+                id="tapizado-bueno"
+                name="tapizado"
+                value="tapizado-bueno"
                 checked="checked"
               />
-              <label for="ip_necesitas">Solo lo que necesitas</label><br />
+              <label for="tapizado-bueno">Bueno</label><br />
               <input
                 type="radio"
-                id="ip_intercambio"
-                name="inventario_personaje"
-                value="ip_intercambio"
+                id="tapizado-malo"
+                name="tapizado"
+                value="tapizado-malo"
               />
-              <label for="ip_intercambio"
-                >Solo lo que necesitas más otros items para intercambiar</label
-              ><br />
-              <input
-                type="radio"
-                id="ip_raros"
-                name="inventario_personaje"
-                value="ip_raros"
-              />
-              <label for="ip_raros"
-                >Objetos raros que te costaron mucho conseguir</label
-              ><br />
-              <input
-                type="radio"
-                id="ip_todos"
-                name="inventario_personaje"
-                value="ip_todos"
-              />
-              <label for="ip_todos"
-                >Lleno de cosas con todos los objetos disponibles</label
-              ><br />
+              <label for="tapizado-malo">Malo</label><br />
             </div>
+
+            <!-- CARROCERÍA -->
             <div class="form-control-e">
               <p>
-                <i class="fa-solid fa-comment-dots"></i> Lo fundamental para mi
-                y la razón por la que me gusta jugar es...
+                <i class="fa-solid fa-boxes-stacked"></i> ¿Cuál es el estado de
+                la carrocería del vehículo?
               </p>
               <input
                 type="radio"
-                id="rf_divertirme"
-                name="razon_fundamental"
-                value="rf_divertirme"
+                id="carroceria-buena"
+                name="carroceria"
+                value="carroceria-buena"
                 checked="checked"
               />
-              <label for="rf_divertirme">Para divertirme</label><br />
+              <label for="carroceria-buena">En buenas condiciones</label><br />
               <input
                 type="radio"
-                id="rf_amigos"
-                name="razon_fundamental"
-                value="rf_amigos"
+                id="carroceria-mala"
+                name="carroceria"
+                value="carroceria-mala"
               />
-              <label for="rf_amigos">Para jugar un rato con mis amigos</label
-              ><br />
+              <label for="carroceria-mala">En malas condiciones</label><br />
+            </div>
+
+            <!-- PINTURA -->
+            <div class="form-control-e">
+              <p>
+                <i class="fa-solid fa-boxes-stacked"></i> ¿Cuál es el estado de
+                la pintura del vehículo?
+              </p>
               <input
                 type="radio"
-                id="rf_no_aburrirme"
-                name="razon_fundamental"
-                value="rf_no_aburrirme"
+                id="pintura-buena"
+                name="pintura"
+                value="pintura-buena"
+                checked="checked"
               />
-              <label for="rf_no_aburrirme">Para no aburrirme en casa</label
-              ><br />
+              <label for="pintura-buena">En buenas condiciones</label><br />
               <input
                 type="radio"
-                id="rf_competir"
-                name="razon_fundamental"
-                value="rf_competir"
+                id="pintura-mala"
+                name="pintura"
+                value="pintura-mala"
               />
-              <label for="rf_competir">Para competir y ser el mejor</label>
+              <label for="pintura-mala">En malas condiciones</label><br />
+            </div>
+
+            <!-- NEUMATICOS -->
+            <div class="form-control-e">
+              <p>
+                <i class="fa-solid fa-boxes-stacked"></i> ¿Cuál es el estado de
+                los neumáticos del vehículo?
+              </p>
+              <input
+                type="radio"
+                id="neumaticos-buenos"
+                name="neumaticos"
+                value="neumaticos-buenos"
+                checked="checked"
+              />
+              <label for="neumaticos-buenos">En buenas condiciones</label><br />
+              <input
+                type="radio"
+                id="neumaticos-malos"
+                name="neumaticos"
+                value="neumaticos-malos"
+              />
+              <label for="neumaticos-malos">En malas condiciones</label><br />
             </div>
           </form>
           <button id="botoncito2" type="" name="">Obtener Recomendación</button>
