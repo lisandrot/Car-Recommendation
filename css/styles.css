@@ -7,8 +7,9 @@ body {
   font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
-  background: url(../images/background2.jpg) no-repeat center center fixed;
-  height: 100%;
+  background-image: radial-gradient(rgb(2, 2, 2), rgb(16, 16, 16));;/*url(../images/background2.jpg) no-repeat fixed; center center fixed;*/
+  
+  /*height: 100%;*/
 }
 
 /********* NAVBAR *********/
@@ -34,14 +35,15 @@ a {
 }
 
 #nav-bar {
-  background: rgb(17, 17, 17);
+  background: rgb(22, 22, 22);
   overflow: hidden;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 6fr 5fr;
+  grid-template-columns: 15fr 5fr;
   align-items: center;
+  justify-content: end;
 }
 
 ul li a {

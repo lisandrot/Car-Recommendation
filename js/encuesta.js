@@ -16,13 +16,15 @@ function calcularRecomendacion(presupuesto, puntaje){
         gpu.innerHTML = pc1.gpu;
         var fuente = document.getElementById('fuente');
         fuente.innerHTML = pc1.fuente;
-        document.getElementById("Pc_gabinete").src="./pcs/PC1/pc_GAB.png";
+        /* document.getElementById("Pc_gabinete").src="./pcs/PC1/pc_GAB.png";
         document.getElementById("Pc_mother").src="./pcs/PC1/pc_MOT.png";
         document.getElementById("Pc_micro").src="./pcs/PC1/pc_CPU.png";
         document.getElementById("Pc_ram").src="./pcs/PC1/pc_RAM.png";
         document.getElementById("Pc_disco").src="./pcs/PC1/pc_DIS.png";
         document.getElementById("Pc_gpu").src="./pcs/PC1/pc_GPU.png";
-        document.getElementById("Pc_fuente").src="./pcs/PC1/pc_FON.png";
+        document.getElementById("Pc_fuente").src="./pcs/PC1/pc_FON.png"; */
+
+
     } else if(presupuesto == 2  && puntaje<=260){
         var gabinete = document.getElementById('gabinete');
         gabinete.innerHTML = pc2.gabinete;
@@ -38,13 +40,13 @@ function calcularRecomendacion(presupuesto, puntaje){
         gpu.innerHTML = pc2.gpu;
         var fuente = document.getElementById('fuente');
         fuente.innerHTML = pc2.fuente;
-        document.getElementById("Pc_gabinete").src="./pcs/PC2/pc_GAB.png";
+        /* document.getElementById("Pc_gabinete").src="./pcs/PC2/pc_GAB.png";
         document.getElementById("Pc_mother").src="./pcs/PC2/pc_MOT.png";
         document.getElementById("Pc_micro").src="./pcs/PC2/pc_CPU.png";
         document.getElementById("Pc_ram").src="./pcs/PC2/pc_RAM.png";
         document.getElementById("Pc_disco").src="./pcs/PC2/pc_DIS.png";
         document.getElementById("Pc_gpu").src="./pcs/PC2/pc_GPU.png";
-        document.getElementById("Pc_fuente").src="./pcs/PC2/pc_FON.png"; 
+        document.getElementById("Pc_fuente").src="./pcs/PC2/pc_FON.png";  */
     } else if(presupuesto == 3  && puntaje<=260){
         var gabinete = document.getElementById('gabinete');
         gabinete.innerHTML = pc3.gabinete;
@@ -60,13 +62,13 @@ function calcularRecomendacion(presupuesto, puntaje){
         gpu.innerHTML = pc3.gpu;
         var fuente = document.getElementById('fuente');
         fuente.innerHTML = pc3.fuente;
-        document.getElementById("Pc_gabinete").src="./pcs/PC3/pc_GAB.png";
+        /* document.getElementById("Pc_gabinete").src="./pcs/PC3/pc_GAB.png";
         document.getElementById("Pc_mother").src="./pcs/PC3/pc_MOT.png";
         document.getElementById("Pc_micro").src="./pcs/PC3/pc_CPU.png";
         document.getElementById("Pc_ram").src="./pcs/PC3/pc_RAM.png";
         document.getElementById("Pc_disco").src="./pcs/PC3/pc_DIS.png";
         document.getElementById("Pc_gpu").src="./pcs/PC3/pc_GPU.png";
-        document.getElementById("Pc_fuente").src="./pcs/PC3/pc_FON.png"; 
+        document.getElementById("Pc_fuente").src="./pcs/PC3/pc_FON.png";  */
     }else if(presupuesto == 2  && puntaje>260){
         var gabinete = document.getElementById('gabinete');
         gabinete.innerHTML = pc4.gabinete;
@@ -82,13 +84,13 @@ function calcularRecomendacion(presupuesto, puntaje){
         gpu.innerHTML = pc4.gpu;
         var fuente = document.getElementById('fuente');
         fuente.innerHTML = pc4.fuente;
-        document.getElementById("Pc_gabinete").src="./pcs/PC4/pc_GAB.png";
-        document.getElementById("Pc_mother").src="./pcs/PC4/pc_MOT.png";
-        document.getElementById("Pc_micro").src="./pcs/PC4/pc_CPU.png";
-        document.getElementById("Pc_ram").src="./pcs/PC4/pc_RAM.png";
-        document.getElementById("Pc_disco").src="./pcs/PC4/pc_DIS.png";
-        document.getElementById("Pc_gpu").src="./pcs/PC4/pc_GPU.png";
-        document.getElementById("Pc_fuente").src="./pcs/PC4/pc_FON.png"; 
+        // document.getElementById("Pc_gabinete").src="./pcs/PC4/pc_GAB.png";
+        // document.getElementById("Pc_mother").src="./pcs/PC4/pc_MOT.png";
+        // document.getElementById("Pc_micro").src="./pcs/PC4/pc_CPU.png";
+        // document.getElementById("Pc_ram").src="./pcs/PC4/pc_RAM.png";
+        // document.getElementById("Pc_disco").src="./pcs/PC4/pc_DIS.png";
+        // document.getElementById("Pc_gpu").src="./pcs/PC4/pc_GPU.png";
+        // document.getElementById("Pc_fuente").src="./pcs/PC4/pc_FON.png"; 
     }else{
         var gabinete = document.getElementById('gabinete');
         gabinete.innerHTML = pc5.gabinete;
@@ -106,13 +108,13 @@ function calcularRecomendacion(presupuesto, puntaje){
         gpu.innerHTML = pc5.gpu;
         var fuente = document.getElementById('fuente');
         fuente.innerHTML = pc5.fuente;
-        document.getElementById("Pc_gabinete").src="./pcs/PC5/pc_GAB.png";
-        document.getElementById("Pc_mother").src="./pcs/PC5/pc_MOT.png";
-        document.getElementById("Pc_micro").src="./pcs/PC5/pc_CPU.png";
-        document.getElementById("Pc_ram").src="./pcs/PC5/pc_RAM.png";
-        document.getElementById("Pc_disco").src="./pcs/PC5/pc_DIS.png";
-        document.getElementById("Pc_gpu").src="./pcs/PC5/pc_GPU.png";
-        document.getElementById("Pc_fuente").src="./pcs/PC5/pc_FON.png"; 
+        // document.getElementById("Pc_gabinete").src="./pcs/PC5/pc_GAB.png";
+        // document.getElementById("Pc_mother").src="./pcs/PC5/pc_MOT.png";
+        // document.getElementById("Pc_micro").src="./pcs/PC5/pc_CPU.png";
+        // document.getElementById("Pc_ram").src="./pcs/PC5/pc_RAM.png";
+        // document.getElementById("Pc_disco").src="./pcs/PC5/pc_DIS.png";
+        // document.getElementById("Pc_gpu").src="./pcs/PC5/pc_GPU.png";
+        // document.getElementById("Pc_fuente").src="./pcs/PC5/pc_FON.png"; 
     }
 }
 
